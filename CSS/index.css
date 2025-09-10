@@ -4,9 +4,24 @@ body {
   font-family: georgia, serif;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  border: dotted 15px #a8a9ad;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style-type: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
 h1 {
   text-align: center;
-  font-size: 35px;
+  font-size: 45px;
   color: #fff5a6;
 }
 
@@ -22,7 +37,18 @@ h2 {
   color: #a8a9ad;
 }
 
-#experience ul {
+.work-experience {
+  border-bottom: 1px solid #fff5a6;
+  margin: 0px 40px;
+}
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+/* #experience ul {
   list-style-type: none;
   display: flex;
 }
@@ -36,6 +62,32 @@ h2 {
 }
 
 #experience li::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("https://media.tenor.com/8gDqRf_x0rkAAAAj/bunny.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+#connect ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+#connect li {
+  position: relative;
+  padding-left: 35px;
+  margin-right: 28px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+#connect li::before {
   content: "";
   position: absolute;
   display: inline-block;
