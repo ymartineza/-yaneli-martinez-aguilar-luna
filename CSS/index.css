@@ -5,9 +5,11 @@
 body {
   background-color: #f3bdc3;
   color: #0a2eb8;
-  font-size: 0.8em;
+  font-size: 1.75rem;
   font-family: georgia, serif;
 }
+
+/* HEADER / NAV BAR */
 
 header {
   position: sticky;
@@ -41,6 +43,8 @@ h2 {
   font-weight: bold;
   color: #212121;
 }
+
+/* EXPERIENCE SECTION */
 
 .work-experience {
   border-bottom: 0.0625em solid #fff5a6;
@@ -79,6 +83,23 @@ h2 {
   background-repeat: no-repeat;
 } */
 
+/* SKILLS SECTION */
+
+#skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#skills li {
+  background-color: #fff5a6;
+  padding: 1rem;
+  border-radius: 1.563rem;
+  font-size: 0.8em;
+}
+
+/* CONNECT SECTION */
+
 #connect ul {
   display: flex;
   justify-content: space-evenly;
@@ -90,7 +111,7 @@ h2 {
   padding-left: 2.1875em;
   margin-right: 1.75em;
   margin-bottom: 0.75em;
-  font-size: 1.55rem;
+  font-size: 0.8em;
 }
 
 #connect li::before {
