@@ -26,6 +26,10 @@ header nav ul {
   padding: 0.625rem;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 h1 {
   text-align: center;
   font-size: 3.8125rem;
@@ -98,6 +102,13 @@ h2 {
   font-size: 0.8em;
 }
 
+/* LEAVE A MESSAGE! SECTION */
+#form {
+  text-align: center;
+  border: #fff5a6 0.35em dotted;
+  padding-bottom: 1em;
+}
+
 /* CONNECT SECTION */
 
 #connect ul {
@@ -116,11 +127,11 @@ h2 {
 
 #connect li::before {
   content: "";
-  position: absolute;
+  position: relative;
   display: inline-block;
   left: 0;
-  width: 125%;
-  height: 125%;
+  width: 75%;
+  height: 75%;
   background-image: url("../images/halftone-bunny-1.png");
   background-size: contain;
   background-repeat: no-repeat;
