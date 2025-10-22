@@ -40,6 +40,11 @@ h1 {
   text-align: center;
 }
 
+img {
+  height: 540px; 
+  width: 540px; 
+}
+
 h2 {
   margin-left: 1.25em;
   padding-right: 1.25em;
@@ -52,14 +57,14 @@ h2 {
 
 .work-experience {
   border-bottom: 0.0625em solid #fff5a6;
-  margin: 0 2.5%;
+  margin: 30px;
 }
 
 .work-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  font-size: 1.75rem;
+  font-size: 1.95rem;
 }
 
 /* #experience ul {
@@ -122,7 +127,7 @@ h2 {
   background-image: url("../images/halftone-bunny-b.png");
   background-size: contain;
   background-repeat: no-repeat;
-  margin-right: 0.5em;  
+  margin-right: 0.5em;
 }
 
 #projects a {
@@ -150,7 +155,7 @@ h2 {
 }
 
 #connect li {
-  display: flex; 
+  display: flex;
   align-items: center;
   position: relative;
   padding-left: 2.1875em;
