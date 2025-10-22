@@ -40,6 +40,11 @@ h1 {
   text-align: center;
 }
 
+img {
+  height: 540px; 
+  width: 540px; 
+}
+
 h2 {
   margin-left: 1.25em;
   padding-right: 1.25em;
@@ -52,14 +57,14 @@ h2 {
 
 .work-experience {
   border-bottom: 0.0625em solid #fff5a6;
-  margin: 0 2.5%;
+  margin: 30px;
 }
 
 .work-header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  font-size: 1.75rem;
+  font-size: 1.95rem;
 }
 
 /* #experience ul {
@@ -102,6 +107,38 @@ h2 {
   font-size: 0.8em;
 }
 
+/* PROJECTS SECTION */
+
+#projects ul {
+  list-style-type: none;
+  justify-content: space-evenly;
+  columns: 3;
+  column-gap: 50px;
+  padding: 10px;
+  column-rule: 10px solid #fff5a6;
+}
+
+#projects li::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url("../images/halftone-bunny-b.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 0.5em;
+}
+
+#projects a {
+  text-decoration: none;
+}
+
+#projects a:hover {
+  color: #fff5a6;
+  text-decoration: underline;
+}
+
 /* LEAVE A MESSAGE! SECTION */
 #form {
   text-align: center;
@@ -118,6 +155,8 @@ h2 {
 }
 
 #connect li {
+  display: flex;
+  align-items: center;
   position: relative;
   padding-left: 2.1875em;
   margin-right: 1.75em;
@@ -129,12 +168,12 @@ h2 {
   content: "";
   position: relative;
   display: inline-block;
-  left: 0;
-  width: 75%;
-  height: 75%;
+  width: 80px;
+  height: 80px;
   background-image: url("../images/halftone-bunny-1.png");
   background-size: contain;
   background-repeat: no-repeat;
+  margin-right: 0.5em;
 }
 
 #connect a {

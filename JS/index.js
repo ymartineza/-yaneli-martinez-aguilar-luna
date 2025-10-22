@@ -93,3 +93,42 @@ messageForm.addEventListener("submit", function (event) {
 
   messageForm.reset()
 })
+
+// ========== PROJECT SECTION ==========
+
+fetch("https://api.github.com/users/ymartineza/repos")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error(
+        "Failed to fetch data from GitHub. Please try again later"
+      );
+    }
+
+    return response.json();
+  })
+
+  .then((repositories) => {
+    // repositories = JSON.parse(this.repositories);
+    console.log("Repositories: ", repositories); 
+    const projectSection = document.getElementById("projects"); 
+    const projectList = projectSection.querySelector("ul"); 
+    projectList.innerHTML = ""; 
+
+    for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement("li");
+        const link = document.createElement("a"); 
+        link.href = repositories[i].html_url; 
+        link.textContent = repositories[i].name; 
+        // if (!repositories[i].fork) {
+        project.appendChild(link);
+        projectList.appendChild(project);
+        // }
+    }
+})  
+  .catch((error) => {
+    console.error("Error fetching repositories:", error); 
+    const projectSection =document.getElementById("projects"); 
+    const errorMessage = document.createElement("p"); 
+    errorMessage.innerHTML = "Unable to load projects. Please try again later.";
+    projectSection.appendChild(errorMessage); 
+  });
